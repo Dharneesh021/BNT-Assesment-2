@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading</title>
+    <style>
+        .p1{
+            font-size: 2rem;  /*Take root */
+        }
+        .p2{
+            font-size: 30px;  /*Take each pixels */
+        }
+        .block1{
+            font-size: 50px;    /*parent pixels */
+            background-color: azure;
+            width: 40%;         /*Convert the range into 100% to 40% */
+            padding: 20px;
+        }
+        .p3{
+            font-size: 1em;     /*Based on parent change the  pixels */
+        }
+    </style>
+</head>
+<body>
+        <p class="p1">Hello World</p>
+        <p class="p2">This is html</p>
+        <div class="block1">
+            <p class="p3">This is CSS</p>
+        </div>
+</body>
+</html>
